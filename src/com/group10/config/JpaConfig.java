@@ -43,15 +43,17 @@ public class JpaConfig {
           
         return transactionManager;
     } 
-    @Bean
-	public DataSource dataSource() {
-
-		final JndiDataSourceLookup dsLookup = new JndiDataSourceLookup();
-		dsLookup.setResourceRef(true);
-		DataSource dataSource = dsLookup.getDataSource("jdbc/inventory");
-		return dataSource;
-
-	}
+   
+	/*
+	 * @Bean public DataSource dataSource() {
+	 * 
+	 * final JndiDataSourceLookup dsLookup = new JndiDataSourceLookup();
+	 * dsLookup.setResourceRef(true); DataSource dataSource =
+	 * dsLookup.getDataSource("jdbc/inventory"); return dataSource;
+	 * 
+	 * }
+	 */
+    
     
  /*   Properties hibernateProps() {
 		Properties properties = new Properties();
